@@ -1,6 +1,7 @@
 # fortune.py (v1.1)
+import random
 print("🔮 Welcome to Preetam Saha's Fortune Teller (21JE0695) 🔮")
-mood = input("How are you feeling today? (happy/sad/neutral): ").strip().lower()
+mood = input("How are you feeling today? (happy/sad/neutral/stressed): ").strip().lower()
 fortunes = {
     "happy": [
         "😄 Great things await you, Preetam! Keep smiling.",
@@ -34,4 +35,4 @@ fortunes = {
 if mood in fortunes:
     print("✨ Your fortune:", random.choice(fortunes[mood]), "✨")
 else:
-    print("🎭 Emotions are complex—try happy, sad, or neutral and I’ll try again!")
+    print("🎭 Emotions are complex—try happy, sad, neutral or stressed and I’ll try again!")
